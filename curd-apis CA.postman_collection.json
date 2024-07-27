@@ -1,0 +1,452 @@
+{
+	"info": {
+		"_postman_id": "437e27e6-92bb-4e57-a92e-87a3cf4985a5",
+		"name": "curd-apis CA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23781195"
+	},
+	"item": [
+		{
+			"name": "Movie",
+			"item": [
+				{
+					"name": "create movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n\"name\": \"He who should not be named: part 1\",\r\n\"imgUrl\": \"https://media.istockphoto.com/id/1141759416/photo/group-of-watching-surricatas-with-question-marks.jpg?s=1024x1024&w=is&k=20&c=2BInuuW9E16G9azFGMqwB9cCg1Zi6aNMGr50KjNLr-s=\",\r\n\"summary\": \"When I was just a baby around 1 months I cant't feels like I lost all my memory coz I don't have anything to say about it\"\r\n}\r\n\r\n\r\n// [\r\n//     {\r\n// name: \"Harry Potter and the Order of the Phoenix\",\r\n// img: \"https://bit.ly/2IcnSwz\",\r\n// summary: \"Harry Potter and Dumbledore's warning about the return of\r\n// Lord Voldemort is not heeded by the wizard authorities who, in turn, look to\r\n// undermine Dumbledore's authority at Hogwarts and discredit Harry.\"\r\n//     },\r\n//     {\r\n// name: \"The Lord of the Rings: The Fellowship of the Ring\",\r\n// img: \"https://bit.ly/2tC1Lcg\",\r\n// summary: \"A young hobbit, Frodo, who has found the One Ring that\r\n// belongs to the Dark Lord Sauron, begins his journey with eight companions to\r\n// Mount Doom, the only place where it can be destroyed.\"\r\n//     },\r\n//     {\r\n// name: \"Avengers: Endgame\",\r\n// img: \"https://bit.ly/2Pzczlb\",\r\n// summary: \"Adrift in space with no food or water, Tony Stark sends a\r\n// message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the\r\n// remaining Avengers -- Thor, Black Widow, Captain America, and Bruce Banner --\r\n// must figure out a way to bring back their vanquished allies for an epic showdown\r\n// with Thanos -- the evil demigod who decimated the planet and the universe.\"\r\n//     }\r\n// ]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/movie/createMovie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"movie",
+								"createMovie"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create movie",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n\"name\": \"He who should not be named: Endgame\",\r\n\"imgUrl\": \"https://media.istockphoto.com/id/1141759416/photo/group-of-watching-surricatas-with-question-marks.jpg?s=1024x1024&w=is&k=20&c=2BInuuW9E16G9azFGMqwB9cCg1Zi6aNMGr50KjNLr-s=\",\r\n\"summary\": \"When I was just a baby around 5 months I cant't feels like I lost all my memory coz I don't have anything to say about it\"\r\n}\r\n\r\n\r\n// [\r\n//     {\r\n// name: \"Harry Potter and the Order of the Phoenix\",\r\n// img: \"https://bit.ly/2IcnSwz\",\r\n// summary: \"Harry Potter and Dumbledore's warning about the return of\r\n// Lord Voldemort is not heeded by the wizard authorities who, in turn, look to\r\n// undermine Dumbledore's authority at Hogwarts and discredit Harry.\"\r\n//     },\r\n//     {\r\n// name: \"The Lord of the Rings: The Fellowship of the Ring\",\r\n// img: \"https://bit.ly/2tC1Lcg\",\r\n// summary: \"A young hobbit, Frodo, who has found the One Ring that\r\n// belongs to the Dark Lord Sauron, begins his journey with eight companions to\r\n// Mount Doom, the only place where it can be destroyed.\"\r\n//     },\r\n//     {\r\n// name: \"Avengers: Endgame\",\r\n// img: \"https://bit.ly/2Pzczlb\",\r\n// summary: \"Adrift in space with no food or water, Tony Stark sends a\r\n// message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the\r\n// remaining Avengers -- Thor, Black Widow, Captain America, and Bruce Banner --\r\n// must figure out a way to bring back their vanquished allies for an epic showdown\r\n// with Thanos -- the evil demigod who decimated the planet and the universe.\"\r\n//     }\r\n// ]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/movie/createMovie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"movie",
+										"createMovie"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "523"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20b-BtpyNdNwv1hoRwQdiMorxrRZ61s\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jul 2024 11:00:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"name\": \"He who should not be named: Endgame\",\n        \"img\": \"https://media.istockphoto.com/id/1141759416/photo/group-of-watching-surricatas-with-question-marks.jpg?s=1024x1024&w=is&k=20&c=2BInuuW9E16G9azFGMqwB9cCg1Zi6aNMGr50KjNLr-s=\",\n        \"summary\": \"When I was just a baby around 5 months I cant't feels like I lost all my memory coz I don't have anything to say about it\",\n        \"isActive\": true,\n        \"_id\": \"66a4d348cffd67fff42cea80\",\n        \"createdAt\": \"2024-07-27T11:00:24.880Z\",\n        \"updatedAt\": \"2024-07-27T11:00:24.880Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get movie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/movie/getMovie/66a4cfa8a84664629999a5da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"movie",
+								"getMovie",
+								"66a4cfa8a84664629999a5da"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get movie",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/movie/getMovie/66a4cd7ba84664629999a5d5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"movie",
+										"getMovie",
+										"66a4cd7ba84664629999a5d5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "457"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c9-Rjugte6OIC/9ZIG3tU4ZnTJxly0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jul 2024 10:37:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"_id\": \"66a4cd7ba84664629999a5d4\",\n        \"name\": \"Harry Potter and the Order of the Phoenix\",\n        \"img\": \"https://bit.ly/2IcnSwz\",\n        \"summary\": \"Harry Potter and Dumbledore's warning about the return ofLord Voldemort is not heeded by the wizard authorities who, in turn look to undermine Dumbledore's authority at Hogwarts and discredit Harry.\",\n        \"isActive\": true,\n        \"createdAt\": \"2024-07-27T10:35:39.990Z\",\n        \"updatedAt\": \"2024-07-27T10:35:39.990Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update movie",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"name\": 57,\r\n    // \"image\": \"Nairobi\",\r\n    \"summary\": \"Very big movie, lorem ipsum and what not!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/movie/updateMovie/66a4cfa8a84664629999a5da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"movie",
+								"updateMovie",
+								"66a4cfa8a84664629999a5da"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update movie",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // \"name\": 57,\r\n    // \"image\": \"Nairobi\",\r\n    \"summary\": \"Very big movie, lorem ipsum and what not!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/movie/updateMovie/66a4cfa8a84664629999a5da",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"movie",
+										"updateMovie",
+										"66a4cfa8a84664629999a5da"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"78-1fFO/dhM+0CwXTeUOW8GzkWDKfs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jul 2024 10:54:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"acknowledged\": true,\n        \"modifiedCount\": 1,\n        \"upsertedId\": null,\n        \"upsertedCount\": 0,\n        \"matchedCount\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/movie/deleteMovie/66a4d45cc1b0cd46ca8e253a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"movie",
+								"deleteMovie",
+								"66a4d45cc1b0cd46ca8e253a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete movie",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/movie/deleteMovie/66a4d45cc1b0cd46ca8e253a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"movie",
+										"deleteMovie",
+										"66a4d45cc1b0cd46ca8e253a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "536"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"218-0TNXyf00j5bX+RaYHzOKNyAgED8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jul 2024 11:05:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success movie deleted\",\n    \"data\": {\n        \"_id\": \"66a4d45cc1b0cd46ca8e253a\",\n        \"name\": \"He who should not be named: part 1\",\n        \"img\": \"https://media.istockphoto.com/id/1141759416/photo/group-of-watching-surricatas-with-question-marks.jpg?s=1024x1024&w=is&k=20&c=2BInuuW9E16G9azFGMqwB9cCg1Zi6aNMGr50KjNLr-s=\",\n        \"summary\": \"When I was just a baby around 1 months I cant't feels like I lost all my memory coz I don't have anything to say about it\",\n        \"isActive\": true,\n        \"createdAt\": \"2024-07-27T11:05:00.164Z\",\n        \"updatedAt\": \"2024-07-27T11:05:00.164Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get all movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/movie/getMovies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"movie",
+								"getMovies"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all movies",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/movie/getMovies",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"movie",
+										"getMovies"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1814"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"716-mOSwO8Dxj343QA+9nltltfCP3cM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jul 2024 11:02:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"66a4cd7ba84664629999a5d4\",\n            \"name\": \"Harry Potter and the Order of the Phoenix\",\n            \"img\": \"https://bit.ly/2IcnSwz\",\n            \"summary\": \"Harry Potter and Dumbledore's warning about the return ofLord Voldemort is not heeded by the wizard authorities who, in turn look to undermine Dumbledore's authority at Hogwarts and discredit Harry.\",\n            \"isActive\": true,\n            \"createdAt\": \"2024-07-27T10:35:39.990Z\",\n            \"updatedAt\": \"2024-07-27T10:35:39.990Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66a4cfa8a84664629999a5da\",\n            \"name\": \"The Lord of the Rings: The Fellowship of the Ring\",\n            \"img\": \"https://bit.ly/2tC1Lcg\",\n            \"summary\": \"Very big movie, lorem ipsum and what not!\",\n            \"isActive\": true,\n            \"createdAt\": \"2024-07-27T10:44:56.914Z\",\n            \"updatedAt\": \"2024-07-27T10:54:02.638Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66a4d0c1cffd67fff42cea7b\",\n            \"name\": \"Avengers: Endgame\",\n            \"img\": \"https://bit.ly/2Pzczlb\",\n            \"summary\": \"Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America, and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.\",\n            \"isActive\": true,\n            \"createdAt\": \"2024-07-27T10:49:37.732Z\",\n            \"updatedAt\": \"2024-07-27T10:49:37.732Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66a4d348cffd67fff42cea80\",\n            \"name\": \"He who should not be named: Endgame\",\n            \"img\": \"https://media.istockphoto.com/id/1141759416/photo/group-of-watching-surricatas-with-question-marks.jpg?s=1024x1024&w=is&k=20&c=2BInuuW9E16G9azFGMqwB9cCg1Zi6aNMGr50KjNLr-s=\",\n            \"summary\": \"When I was just a baby around 5 months I cant't feels like I lost all my memory coz I don't have anything to say about it\",\n            \"isActive\": true,\n            \"createdAt\": \"2024-07-27T11:00:24.880Z\",\n            \"updatedAt\": \"2024-07-27T11:00:24.880Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
